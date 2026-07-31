@@ -1,10 +1,17 @@
+from dotenv import load_dotenv
+import os
 from openai import OpenAI
 
-client = OpenAI()
+load_dotenv()
+
+client = OpenAI(
+    api_key=os.getenv("OPENAI_API_KEY")
+)
 
 def analyze(site):
 
-    prompt=f"""
+    prompt = f"""
+Analyze this website.
 
 URL:
 {site.url}
@@ -15,18 +22,19 @@ Title:
 Text:
 {site.text}
 
-Analyze this website.
+Return ONLY valid JSON in this format:
 
-Return JSON only.
-
+{{
+  "prediction": "Safe or Phishing",
+  "risk": 0,
+  "confidence": 0,
+  "reasons": []
+}}
 """
 
-    response=client.responses.create(
-
+    response = client.responses.create(
         model="gpt-5.5",
-
         input=prompt
-
     )
 
     return response.output_text
