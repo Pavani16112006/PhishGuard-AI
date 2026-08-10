@@ -7,11 +7,17 @@ The project combines a Chrome browser extension with a Python FastAPI backend th
 ## Features
 
 Analyze URLs for potential phishing threats
+
 AI-assisted phishing detection
+
 Chrome browser extension
+
 HuggingFace model backend
+
 Warn users about suspicious websites
+
 Keeps sensitive environment variables out of Git
+
 Communication between the browser extension and local backend
 
 
