@@ -14,6 +14,4 @@ Warn users about suspicious websites
 Keeps sensitive environment variables out of Git
 Communication between the browser extension and local backend
 
-## Project Structure
 
-PhishGuard-AI/ │ ├── backend/ │ ├── app.py │ ├── ai.py │ ├── prompt.py │ ├── requirements.txt │ └── .env # Not committed to Git │ ├── extension/ │ ├── background.js │ ├── content.js │ ├── manifest.json │ ├── popup.css │ ├── popup.html │ └── popup.js │ ├── .gitignore └── README.md
