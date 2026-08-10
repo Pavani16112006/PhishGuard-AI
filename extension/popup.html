@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PhishGuard AI</title>
+
+    <link rel="stylesheet" href="popup.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🛡️ PhishGuard AI</h1>
+
+        <p class="subtitle">
+            AI-Powered Phishing Website Detector
+        </p>
+
+        <hr>
+
+        <div class="websiteBox">
+
+            <h3>Current Website</h3>
+
+            <p id="websiteURL">
+                Loading...
+            </p>
+
+        </div>
+
+        <button id="scanButton">
+            Analyze Website
+        </button>
+
+        <div class="results">
+
+            <h2>Analysis Result</h2>
+
+            <div class="card">
+
+                <h3>Prediction</h3>
+
+                <p id="prediction">
+                    Waiting...
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Risk Score</h3>
+
+                <p id="risk">
+                    --
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Confidence</h3>
+
+                <p id="confidence">
+                    --
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Reasons</h3>
+
+                <ul id="reasons"></ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>
