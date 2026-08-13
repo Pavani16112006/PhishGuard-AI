@@ -2,7 +2,7 @@
 ## Overview
 
 PhishGuard AI is an AI-powered browser extension designed to help users identify potentially malicious and phishing URLs before they visit dangerous websites.
-The project combines a Chrome browser extension with a Python FastAPI backend that analyzes suspicious URLs using AI-based detection.
+The project combines a Chrome browser extension with an API backend that analyzes suspicious URLs using AI-based detection.
 
 ## Features
 
