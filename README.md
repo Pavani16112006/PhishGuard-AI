@@ -35,6 +35,26 @@ AI-based webpage analysis
 ## How It Works
 
 The Chrome extension collects relevant information from the current webpage and sends it to the API backend. The backend passes this information to the AI model, which analyzes the webpage and returns a prediction, risk score, confidence level, and reasons.
+User Opens Website
+↓
+Chrome Extension Detects URL
+↓
+Collect Website Information
+↓
+Prepare Input Data
+↓
+Hugging Face AI Model
+↓
+Send data to Qwen/Qwen3-8B model
+↓
+Analyze & Classify
+↙             ↘
+Legitimate          Phishing
+↓                  ↓
+Safe Status        Warning Alert
+↘            ↙
+                                                          User Makes Decision 
+
 
 ### Disclaimer
 
